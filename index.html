@@ -45,4 +45,11 @@
     background-color: #FFB6C1; /* Light pink color */
     margin: 0;
     padding: 0;
-	
+	<button onclick="changeBackgroundColor()">Change Background Color</button>
+
+<script>
+function changeBackgroundColor() {
+  var colors = ["#ffcccc", "#ccffcc", "#ccccff", "#ffffcc"]; // Add your desired colors here
+  var randomColor = colors[Math.floor(Math.random() * colors.length)];
+  document.body.style.backgroundColor = randomColor;
+}
