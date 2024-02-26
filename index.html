@@ -10,8 +10,15 @@
 
 
 <p id="content"> Click down below!</p>
-	<br>
+	
+<button onclick="changeContent()">Change Content</button>
+	<script>
+function changeContent() {
+  var contentParagraph = document.getElementById("content");
+  contentParagraph.textContent = "Hey there welcome!!!!!";
 
+
+	
 	<html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -27,13 +34,6 @@
 </body>
 </html>
 	
-
-<button onclick="changeContent()">Change Content</button>
-
-<script>
-function changeContent() {
-  var contentParagraph = document.getElementById("content");
-  contentParagraph.textContent = "Hey there welcome!!!!!";
 
 }
 </script>
