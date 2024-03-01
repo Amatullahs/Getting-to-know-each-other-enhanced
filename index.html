@@ -14,33 +14,39 @@
 
   /* Enhance button appearance with transitions */
   button {
-    background-color: #4CAF50; /* Green */
+    background-color: #FFB6C1; /* Light pink */
     border: none;
     color: white;
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
-    display: block;
-    margin: 20px auto; /* Center the button horizontally */
+    display: inline-block;
     font-size: 16px;
+    margin: 4px 2px;
     transition-duration: 0.4s;
     cursor: pointer;
   }
 
   button:hover {
-    background-color: #45a049; /* Darker green */
+    background-color: #FF69B4; /* Darker pink */
+  }
+
+  /* Center the toggle button */
+  #toggle-button {
+    display: block;
+    margin: 20px auto;
   }
 </style>
 </head>
 <body>
 
-<h1 style="text-align: center;">Amatullah Sajida <span id="heart">&#x2665;</span></h1>
+<h1>Amatullah Sajida <span id="heart">&#x2665;</span></h1>
 
 <img src="IMG_9737.jpeg" alt="Image"> <!-- Image is centered -->
 
-<button onclick="toggleContent()">Toggle Content</button>
+<button id="toggle-button" onclick="toggleContent()">Toggle Content</button>
 
-<p id="content" style="text-align: center;">Click below peeps!</p>
+<p id="content">Click below peeps!</p>
 
 <script>
 function toggleContent() {
@@ -70,4 +76,9 @@ function toggleContent() {
     <p>I also enjoy reading since it is entertaining and a relaxing hobby to have</p>
 
     <h3>Fun fact</h3>
-    <p>As for my fun fact, I lo
+    <p>As for my fun fact, I love cars and enjoy going to car meets and races. I grew up loving cars and enjoy looking at them. I find them as a therapy of sorts and definitely are my favorite thing. I did the Porsche experience for my 18th Birthday and found it so fascinating.</p>
+    <a href="https://www.nytimes.com/2022/04/21/t-magazine/work-life-balance-art.html">More on the creation and meaning of art</a>
+</div>
+
+</body>
+</html>
