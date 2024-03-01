@@ -40,31 +40,12 @@
 </head>
 <body>
 
-<h1>Amatullah Sajida <span id="heart">&#x2665;</span></h1>
-
-<img src="IMG_9737.jpeg" alt="Image"> <!-- Image is centered -->
-
-<button id="toggle-button" onclick="toggleContent()">Click below!</button>
-
-<p id="content">Click below peeps!</p>
-
-<script>
-function toggleContent() {
-  var contentParagraph = document.getElementById("content");
-  if (contentParagraph.textContent === "hey guys welcome!") {
-    contentParagraph.textContent = "Click below peeps!";
-  } else {
-    contentParagraph.textContent = "hey guys welcome!";
-  }
-}
-</script>
-
-<h3>Introduction</h3>
+<h1>Introduction</h1>
 
 <div style="text-align: center;">
     <p>My discord name: Amatullah0159</p>
-    <p>My Lewis email: Amatullahsajida@lewisu.edu</p>
-    <p>My name is Amatullah Sajida. I am a Freshman here at Lewis and wish to get my degree in Business Analytics and Computer Science.</p>
+
+    <h3>My name is Amatullah Sajida. I am a Freshman here at Lewis and wish to get my degree in Business Analytics and Computer Science.</h3>
 
     <h3>What I hope to learn in this course</h3>
     <p>How to create web pages and develop cool websites</p>
@@ -78,7 +59,21 @@ function toggleContent() {
     <h3>Fun fact</h3>
     <p>As for my fun fact, I love cars and enjoy going to car meets and races. I grew up loving cars and enjoy looking at them. I find them as a therapy of sorts and definitely are my favorite thing. I did the Porsche experience for my 18th Birthday and found it so fascinating.</p>
     <a href="https://www.nytimes.com/2022/04/21/t-magazine/work-life-balance-art.html">More on the creation and meaning of art</a>
+
+    <button id="toggle-button" onclick="toggleContent()">Toggle Content</button>
+    <p id="content">Click below peeps!</p>
 </div>
+
+<script>
+function toggleContent() {
+  var contentParagraph = document.getElementById("content");
+  if (contentParagraph.textContent === "hey guys welcome!") {
+    contentParagraph.textContent = "Click below peeps!";
+  } else {
+    contentParagraph.textContent = "hey guys welcome!";
+  }
+}
+</script>
 
 </body>
 </html>
