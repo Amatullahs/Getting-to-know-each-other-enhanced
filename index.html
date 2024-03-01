@@ -30,17 +30,23 @@
   button:hover {
     background-color: #45a049; /* Darker green */
   }
+
+  /* Center container */
+  .container {
+    text-align: center;
+  }
 </style>
 </head>
 <body>
 
 <h1>Amatullah Sajida <span id="heart">&#x2665;</span></h1>
 
-<img src="IMG_9737.jpeg" alt="Image"> <!-- Image is centered -->
+<div class="container">
+  <img src="IMG_9737.jpeg" alt="Image"> <!-- Image is centered -->
+  <button onclick="toggleContent()">Toggle Content</button>
+</div>
 
 <p id="content">Click below peeps!</p>
-
-<button onclick="toggleContent()">Toggle Content</button>
 
 <script>
 function toggleContent() {
@@ -76,4 +82,5 @@ function toggleContent() {
 
 </body>
 </html>
+
 
